@@ -78,7 +78,7 @@ h1, h2{
 		display: flex;
 		justify-content: flex-start;
 		height: 25vw;
-		max-height: 300px;
+		max-height: 250px;
 		margin: 0;
 		font-size: 30pt;
 	}
@@ -144,6 +144,9 @@ h1, h2{
 		display: flex;
 		justify-content: space-between;
 	}
+	#banner a {
+		margin-right: 10px;
+	}
 	.mobile-menu {
 		display: inline-block;
 		color: #ebebeb;
@@ -159,6 +162,9 @@ h1, h2{
 	    display: flex;
     	flex-flow: column nowrap;
     }
+   	.text-box {
+		font-size: 24pt;
+	}
     #banner a {
 		font-size: 24pt;
 		/*margin: 3rem 0 0 1em;*/
@@ -171,6 +177,22 @@ h1, h2{
 	}
 	.text-block p {
 		flex: 0 0 auto;
+		margin: 0;
 	}
-
+}
+@media only screen and (max-width: 460px), only screen and (max-device-width: 460px) {
+   	.text-box {
+		font-size: 18pt;
+	}
+    #banner a {
+		font-size: 18pt;
+		/*margin: 3rem 0 0 1em;*/
+	}
+	#banner h2 {
+		font-size: 14pt;
+	}
+	.text-block p {
+		font-size: 10pt;
+		margin: 0;
+	}
 }
