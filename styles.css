@@ -17,7 +17,7 @@ img {
 h1, h2{
 	margin: 0;
 }
-#container {
+main, header {
 	max-width: 1024px;
 	margin: auto;
 }
@@ -34,7 +34,7 @@ h1, h2{
 		color: #ebebeb;
 		/*vertical-align: middle;*/
 		text-decoration: none;
-		margin: 5.2vh 2vw;
+		margin: 3% 2%;
 		transition: all 0.3s cubic-bezier(.25,.8,.25,1);
 	}
 	#navbar a:hover {
@@ -142,6 +142,7 @@ h1, h2{
 	}
 	#navbar {
 		display: flex;
+		height: 60px;
 		justify-content: space-between;
 	}
 	#banner a {
@@ -150,13 +151,15 @@ h1, h2{
 	.mobile-menu {
 		display: inline-block;
 		color: #ebebeb;
-		margin: 2rem 2vh;
+		margin: 6%;
 	}
 	.mini-menu {
 		display: block;
 		padding: 20px;
 		font-size: 38px;
 		color: #ebebeb;
+		padding: 0;
+		margin: 2% 4%;
 	}
 	#pic-block {
 	    display: flex;
@@ -182,10 +185,10 @@ h1, h2{
 }
 @media only screen and (max-width: 460px), only screen and (max-device-width: 460px) {
    	.text-box {
-		font-size: 18pt;
+		font-size: 16pt;
 	}
     #banner a {
-		font-size: 18pt;
+		font-size: 16pt;
 		/*margin: 3rem 0 0 1em;*/
 	}
 	#banner h2 {
@@ -193,6 +196,6 @@ h1, h2{
 	}
 	.text-block p {
 		font-size: 10pt;
-		margin: 0;
+		margin: 5px 0;
 	}
 }
