@@ -22,14 +22,14 @@ main, header {
 	margin: auto;
 }
 /*@media only screen and (min-width: 1024px) { */
-	#navbar {
+	.navbar {
 		width: 100%;
 		height: 14vh;
 		max-height: 90px;
 		display: inline-block;
 		background-color: #373c3f;
 	}
-	#navbar a {
+	.navbar a {
 		display: inline-block;
 		color: #ebebeb;
 		/*vertical-align: middle;*/
@@ -37,7 +37,7 @@ main, header {
 		margin: 3% 2%;
 		transition: all 0.3s cubic-bezier(.25,.8,.25,1);
 	}
-	#navbar a:hover {
+	.navbar a:hover {
 		color: #9e9e9e;
 		/*z-index: 10;*/	
 	}
@@ -47,7 +47,7 @@ main, header {
 	.mini-menu {
 		display: none;
 	}
-	#banner {
+	.banner {
 		width: 100%;
 		height: 50vw;
 		max-height: 512px;
@@ -56,7 +56,7 @@ main, header {
 		align-items: center;
 		/*display: inline-block;*/
 	}
-	#banner a {
+	.banner a {
 		display: inline-block;
 		color: #ebebeb;
 		font-size: 36pt;
@@ -65,10 +65,10 @@ main, header {
 		margin-left: 1em;
 		transition: all 0.3s; /*cubic-bezier(.25,.8,.25,1);*/
 	}
-	#banner a:hover {
+	.banner a:hover {
 		color: #122d30;	
 	}
-	#banner h2 {
+	.banner h2 {
 		display: inline-block;
 		font-size: 30pt;
 		margin: 0.5em 0 0 1.3em;
@@ -82,7 +82,7 @@ main, header {
 		margin: 0;
 		font-size: 30pt;
 	}
-	#text-left {
+	.text-left {
 		width: 75%;
 		background-color: #27212c;
 		justify-content: center;
@@ -91,7 +91,7 @@ main, header {
 		/*flex: 4 1;*/
 		color: #9383a1;
 	}
-	#text-right {
+	.text-right {
 		width: 25%;
 		background-color: #bc3183;
 		justify-content: center;
@@ -100,19 +100,19 @@ main, header {
 		/*flex: 1.1 4;*/
 		float: right;
 	}
-	#text-right a { 	
+	.text-right a { 	
 		text-decoration: none;
 		color: #fff;
 		transition: all 0.3s;
 	}
-	#text-right a:hover {
+	.text-right a:hover {
 		color: #9383a1;	
 	}
-	#pic-block {
+	.pic-block {
 	    display: flex;
     	flex-flow: row nowrap;
 	}
-	#pic-block img {
+	.pic-block img {
 		display: inline;
 		margin: 0;
 	}
@@ -137,15 +137,15 @@ main, header {
 	}
 
 @media only screen and (max-width: 640px), only screen and (max-device-width: 640px) {
-	#navbar a {
+	.navbar a {
 		display: none;
 	}
-	#navbar {
+	.navbar {
 		display: flex;
 		height: 60px;
 		justify-content: space-between;
 	}
-	#banner a {
+	.banner a {
 		margin-right: 10px;
 	}
 	.mobile-menu {
@@ -161,18 +161,18 @@ main, header {
 		padding: 0;
 		margin: 2% 4%;
 	}
-	#pic-block {
+	.pic-block {
 	    display: flex;
     	flex-flow: column nowrap;
     }
    	.text-box {
 		font-size: 24pt;
 	}
-    #banner a {
+    .banner a {
 		font-size: 24pt;
 		/*margin: 3rem 0 0 1em;*/
 	}
-	#banner h2 {
+	.banner h2 {
 		font-size: 18pt;
 	}
 	.text-block-inner {
@@ -187,11 +187,11 @@ main, header {
    	.text-box {
 		font-size: 16pt;
 	}
-    #banner a {
+    .banner a {
 		font-size: 16pt;
 		/*margin: 3rem 0 0 1em;*/
 	}
-	#banner h2 {
+	.banner h2 {
 		font-size: 14pt;
 	}
 	.text-block p {
