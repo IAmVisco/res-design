@@ -4,7 +4,7 @@ body {
 }
 @font-face {
 	font-family: "Montserrat";
-	scr: url(fonts/Montserrat-SemiBold.ttf);
+	src: url(fonts/Montserrat-SemiBold.ttf);
 }
 * {
 	font-size: 100%;
@@ -22,26 +22,29 @@ main, header {
 	margin: auto;
 }
 /*@media only screen and (min-width: 1024px) { */
-	.navbar {
+	nav {
 		width: 100%;
-		height: 14vh;
-		max-height: 90px;
+		max-width: 1024px;
 		display: inline-block;
 		background-color: #373c3f;
 	}
-	.navbar a {
-		display: inline-block;
+	ul {
+		/*padding: 45px;*/
+		margin: 0;
+	}
+	nav li {
+		display: inline;
+		margin-right: 25px;
+	}
+	nav a {
 		color: #ebebeb;
-		/*vertical-align: middle;*/
 		text-decoration: none;
-		margin: 3% 2%;
+	}
+	nav a:hover {
+		color: #9e9e9e;
 		transition: all 0.3s cubic-bezier(.25,.8,.25,1);
 	}
-	.navbar a:hover {
-		color: #9e9e9e;
-		/*z-index: 10;*/	
-	}
-	.mobile-menu {
+	#mobile-menu {
 		display: none;
 	}
 	.mini-menu {
@@ -137,29 +140,32 @@ main, header {
 	}
 
 @media only screen and (max-width: 640px), only screen and (max-device-width: 640px) {
-	.navbar a {
+	nav ul {
 		display: none;
+		margin: 0;
 	}
-	.navbar {
+	nav {
 		display: flex;
-		height: 60px;
+		min-height: 60px;
 		justify-content: space-between;
+	}
+	nav li {
+		display: block;
+		padding: 10px 0px;
 	}
 	.banner a {
 		margin-right: 10px;
 	}
-	.mobile-menu {
+	#mobile-menu {
 		display: inline-block;
 		color: #ebebeb;
-		margin: 6%;
+		padding: 5px 20px;
 	}
 	.mini-menu {
 		display: block;
-		padding: 20px;
 		font-size: 38px;
 		color: #ebebeb;
-		padding: 0;
-		margin: 2% 4%;
+	    margin: 6px 20px;
 	}
 	.pic-block {
 	    display: flex;
@@ -181,6 +187,7 @@ main, header {
 	.text-block p {
 		flex: 0 0 auto;
 		margin: 0;
+		padding: 10px;
 	}
 }
 @media only screen and (max-width: 460px), only screen and (max-device-width: 460px) {

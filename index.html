@@ -8,15 +8,17 @@
 </head>
 <body>
 	<header>
-		<div class="navbar">
-			<a class="full-menu" href="#">PSD WEBSITES</a>
-			<a class="full-menu" href="#">UI KITS</a>
-			<a class="full-menu" href="#">PREMIUM PSD FILES</a>
-			<a class="full-menu" href="#">ABOUT</a>
-			<a class="full-menu" href="#">BLOG</a>
-			<p class="mobile-menu">Navigation</p>
-			<div class="mini-menu">&#8801</div>
-		</div>
+		<nav>
+			<ul>
+				<li><a href="#">PSD WEBSITES</a></li>
+				<li><a href="#">UI KITS</a></li>
+				<li><a href="#">PREMIUM PSD FILES</a></li>
+				<li><a href="#">ABOUT</a></li>
+				<li><a href="#">BLOG</a></li>
+			</ul>
+			<p id="mobile-menu">Navigation</p>
+			<div class="mini-menu"><a id="nav-btn" onclick="openNav()">&#8801</a></div>
+		</nav>
 	</header>
 	<main>
 		<div class="banner">
@@ -48,5 +50,7 @@
 			</div>
 		</div>
 	</main>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="script.js"/></script>
 </body>
 </html>
