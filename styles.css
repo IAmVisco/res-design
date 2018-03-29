@@ -14,7 +14,8 @@ img {
 	vertical-align: bottom;
 	width: 100%;
 }
-h1, h2{
+h1, 
+h2 {
 	margin: 0;
 }
 main, header {
@@ -29,7 +30,7 @@ main, header {
 		background-color: #373c3f;
 	}
 	ul {
-		/*padding: 45px;*/
+		padding: 45px;
 		margin: 0;
 	}
 	nav li {
